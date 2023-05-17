@@ -13,7 +13,7 @@ After=docker.service
 [Service]
 Type=oneshot
 Restart=no
-ExecStart=/home/cosmicpsyop/umbrel/scripts/umbrel-os/external-storage/update-from-sdcard
+ExecStart=/home/umbrel/umbrel/scripts/umbrel-os/external-storage/update-from-sdcard
 TimeoutStartSec=45min
 User=root
 Group=root
