@@ -3,13 +3,13 @@
 
 [Unit]
 Description=Status Server
-Before=umbrel-external-storage-sdcard-update.service
-Before=umbrel-external-storage.service
+#Before=umbrel-external-storage-sdcard-update.service
+#Before=umbrel-external-storage.service
 Before=umbrel-startup.service
 
 [Service]
 Type=exec
-ExecStartPre=/home/umbrel/umbrel/scripts/umbrel-os/status-server/setup
+ExecStartPre=/home/cosmicpsyop/umbrel/scripts/umbrel-os/status-server/setup
 ExecStart=/status-server/status-server
 User=root
 Group=root

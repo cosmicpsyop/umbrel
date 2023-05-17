@@ -8,7 +8,7 @@ Before=docker.service
 
 [Service]
 Type=oneshot
-ExecStart=/home/umbrel/umbrel/scripts/umbrel-os/fdocker clean containers
+ExecStart=/home/cosmicpsyop/umbrel/scripts/umbrel-os/fdocker clean containers
 User=root
 Group=root
 StandardOutput=syslog

@@ -3,10 +3,10 @@
 
 [Unit]
 Description=Umbrel Startup Service
-Requires=umbrel-external-storage.service
-After=umbrel-external-storage.service
-Requires=umbrel-external-storage-sdcard-update.service
-After=umbrel-external-storage-sdcard-update.service
+#Requires=umbrel-external-storage.service
+#After=umbrel-external-storage.service
+#Requires=umbrel-external-storage-sdcard-update.service
+#After=umbrel-external-storage-sdcard-update.service
 Wants=network-online.target
 After=network-online.target
 Wants=docker.service
@@ -20,8 +20,8 @@ StartLimitInterval=0
 Type=forking
 TimeoutStartSec=infinity
 TimeoutStopSec=16min
-ExecStart=/home/umbrel/umbrel/scripts/start
-ExecStop=/home/umbrel/umbrel/scripts/stop
+ExecStart=/home/cosmicpsyop/umbrel/scripts/start
+ExecStop=/home/cosmicpsyop/umbrel/scripts/stop
 User=root
 Group=root
 StandardOutput=syslog
